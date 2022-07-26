@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap-link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+    <!-- style css  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/152ec3c3f5.js" crossorigin="anonymous"></script>
+</head>
+<div class="container">
+    <nav class="navbar navbar-expand-lg d-flex">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#">Abacus Convention Center</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav fw-bold fs-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Subscribe</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<body>
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/banner.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  ">
+                            <h5 class="h1 fw-bold display">The perfect venue for your <br>
+                                next event</h5>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit
+                                officia
+                                consequat duis enim velit .</p>
+                            <button class="btn btn-light text-primary px-4">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/people.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Second slide label</h5>
+                            <p>Amet minim mollit non deserunt ullamco est sit aliqua <br> dolor do amet sint. Velit
+                                officia
+                                consequat duis enim velit .</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="./images/wedding.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start">
+                    <h1>Every moment is Precious </h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+                    <div class="toast-container position-fixed livet">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+
+                            <div class="toast-body d-flex justify-content-between">
+                                <span>
+                                    <i class="fa-solid fa-gift"></i>
+                                    20% off on next booking
+                                </span>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container margin">
+            <h1 class="text-center">Our Package</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4 margin">
+                <!--------------------- number one-------------------- -->
+                <div class="col">
+                    <div class="card h-100 card-castom">
+                        <div class="card-body">
+                            <h1 class="card-title">$300</h1>
+                            <h2 class="card-title">Business fair</h2>
+                            <p class="card-text">For most businesses event
+                                like book fair, craft fair.</p>
+                            <!-------- card list  --------->
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    limited space access
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Secuirty facility
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    event support
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Decoration design
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Per day bill
+                                </label>
+                            </div>
+                            <!---------- card list end  ----------->
+                            <button class="btn btn-lg castom-btn mt-3"><span class="text-primary">Choose
+                                    Plan</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------- number two-------------------- -->
+                <div class="col">
+                    <div class="card h-100 card-castom">
+                        <div class="card-body">
+                            <h1 class="card-title">$300</h1>
+                            <h2 class="card-title">Business fair</h2>
+                            <p class="card-text">For most businesses event
+                                like book fair, craft fair.</p>
+                            <!-------- card list  --------->
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    limited space access
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Secuirty facility
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    event support
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Decoration design
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Per day bill
+                                </label>
+                            </div>
+                            <!---------- card list end  ----------->
+                            <button class="btn btn-lg castom-btn mt-3"><span class="text-primary">Choose
+                                    Plan</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------- number three-------------------- -->
+
+
+
+                <div class="card h-100 card-castom-3 col box-shadwo fieldset bg-primary rounded-5">
+                    <span
+                        class="position-absolute top-0 translate-middle badge rounded-pill bg-danger badge-sm">Hot</span>
+                    <h1 class="card-title">$300</h1>
+                    <h2 class="card-title">Business fair</h2>
+                    <p class="card-text">For most businesses event
+                        like book fair, craft fair.</p>
+                    <!-------- card list  --------->
+                    <div class="form-check ">
+                        <input class="form-check-input rounded-circle" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            limited space access
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input rounded-circle" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Secuirty facility
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input rounded-circle" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            event support
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input rounded-circle" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Decoration design
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input rounded-circle" type="checkbox" value="" id="flexCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Per day bill
+                        </label>
+                    </div>
+                    <!---------- card list end  ----------->
+                    <button class="btn btn-lg castom-btn-3 mt-3"><span class="text-primary">Choose
+                            Plan</span></button>
+
+                </div>
+
+
+
+                <!--------------------- number four-------------------- -->
+                <div class="col ">
+                    <div class="card h-100 card-castom">
+                        <div class="card-body">
+                            <h1 class="card-title">$300</h1>
+                            <h2 class="card-title">Business fair</h2>
+                            <p class="card-text">For most businesses event
+                                like book fair, craft fair.</p>
+                            <!-------- card list  --------->
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    limited space access
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Secuirty facility
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    event support
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Decoration design
+                                </label>
+                            </div>
+                            <div class="form-check ">
+                                <input class="form-check-input rounded-circle" type="checkbox" value=""
+                                    id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Per day bill
+                                </label>
+                            </div>
+                            <!---------- card list end  ----------->
+                            <button class="btn btn-lg castom-btn mt-3"><span class="text-primary">Choose
+                                    Plan</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container text-center mt-5">
+            <h1 class=" mb-5">Happy Clients says</h1>
+            <div class="row card-gap justify-content-center gy-3">
+                <div class="card col-lg -4  col-sm-8 card-body-size">
+                    <div class="card-body ">
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img src="./images/person 1.png" alt="" class="img-thumnail">
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                    </div>
+                </div>
+                <div class="card col-lg-4  col-sm-8 card-body-size">
+                    <div class="card-body ">
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img src="./images/person 2.png" alt="" class="img-thumnail">
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                    </div>
+                </div>
+                <div class="card col-lg-4  col-sm-8 card-body-size">
+                    <div class="card-body ">
+                        <p>Slate helps you see how <br>
+                            many more days you need <br>
+                            to work to reach your financial <br>
+                            goal for the month and year.</p>
+                        <img src="./images/person 3.png" alt="" class="img-thumnail">
+                        <p>Regina Miles</p>
+                        <p>Banker</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h1>Frequently Asked Questions</h1>
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #4
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <img src="./images/people.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark text-white py-5">
+            <div class="">
+                <div class=" row flex-column-reverse gy-4">
+                    <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center">
+                        <small>© 2020 bike. All rights reserved</small>
+                    </div>
+
+                    <div class="d-flex flex-column col-lg-6 col-12 justify-content-center align-items-center ">
+                        <h3>Get the App</h3>
+                        <img src="./images/app stor.png" alt="" style="width: 135px;">
+                        <img src="./images/playstore.png" alt="" style="width: 135px;">
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+</body>
+
+</html>

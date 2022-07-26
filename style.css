@@ -1,0 +1,61 @@
+.livet {
+    bottom: 50vh;
+    right: 0;
+    width: 15rem;
+
+}
+
+.castom-btn {
+    width: 207px;
+    /* height: 45px; */
+    background-color: #f496d21e;
+    border-radius: 24px;
+}
+
+.castom-btn>span {
+    opacity: 2;
+}
+
+.card-castom {
+    border: none;
+}
+
+.card-castom-3 {
+    border: none;
+}
+
+.castom-btn-3 {
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    width: 207px;
+}
+
+.fieldset {
+    box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+    position: relative;
+    top: -79px;
+    padding-bottom: 30px;
+    padding-top: 5%;
+
+}
+
+.margin {
+    margin-top: 6rem;
+}
+
+.card-gap {
+    column-gap: 100px;
+}
+
+.card-body-size {
+    width: 360px;
+    height: 323px;
+    padding: 0;
+    border: none;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.13);
+}
+
+.badge-sm {
+    left: 80%;
+    padding: 10px 15px;
+}
